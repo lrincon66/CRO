@@ -1,7 +1,7 @@
 '''
 CRO
 by Martin Moreno
-Last updated: May 29th, 2022
+Last updated: June 14th, 2022
 
 Optimization for Lenard Jones Clusters
 '''
