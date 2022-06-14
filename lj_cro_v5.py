@@ -11,13 +11,13 @@ np.random.seed()
 from scipy.optimize import minimize
 
 #Initialization
-N = 1000 #iteration number
+N = 1500 #iteration number
 PopSize = 10#population size, must be initialized as an integer
 KineticEnergyLossRate = 0.75 #kinetic energy reduction
 MoleColl = 0.5 #unimolecular or intermolecular selection 50% chance for unimolecular
 buffer = 0.0 #surroundings energy
-atoms = 38 #number of atoms for the cluster
-MinTrigger = 15 #minimim collision trigger for decomposition or synthesis
+atoms = 75 #number of atoms for the cluster
+MinTrigger = 20 #minimim collision trigger for decomposition or synthesis
 Eactive = 1.0 #parameter for directed montecarlo
 Etarget = -4.1 #parameter for directed montecarlo
 SigmaTarget = 1.25 #parameter for directed montecarlo
