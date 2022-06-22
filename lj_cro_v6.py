@@ -14,19 +14,19 @@ from scipy.optimize import minimize
 N = 1500#iteration number
 PopSize = 10#population size, must be initialized as an integer
 KineticEnergyLossRate = 0.3 #kinetic energy reduction
-MoleColl = 0.4 #intermolecular probability 
+MoleColl = 0.7 #intermolecular probability 
 buffer = 0.0 #surroundings energy
-atoms = 40  #number of atoms for the cluster
-alfa = 20
+atoms = 29  #number of atoms for the cluster
+alfa = 30
 beta = 15
 Eactive = 1.0 #parameter for directed montecarlo
-Etarget = -4.1 #parameter for directed montecarlo
-SigmaTarget = 1.25 #parameter for directed montecarlo
+Etarget = -4.0 #parameter for directed montecarlo
+SigmaTarget = 1.5 #parameter for directed montecarlo
 index = np.arange(atoms) #indexes for the directed montecarlo
 r_grid = 0.6*np.power(float(atoms),1.0/3.0) #radius for an spherical grid 
 r_grid_atom = 1.1 #half side of the grid for directed montecarlo
 EaDMC = 0.3 #parameter for directed montecarlo
-n_mc = 10*atoms #iterations for the directed montecarlo
+n_mc = 3*atoms #iterations for the directed montecarlo
 temp = 4.0 #paramter for kinetic energy
 
 def ene_lj(w):
